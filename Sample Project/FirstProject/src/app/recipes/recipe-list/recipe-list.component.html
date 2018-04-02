@@ -1,0 +1,14 @@
+<div>
+    <a *ngFor="let recipe of recipes">
+        <div class="pull-left">
+            <h4>{{recipe.name}}</h4>
+            <h4>{{recipe.description}}</h4>
+        </div>
+        <span  class="pull-right">
+            <img [src]="recipe.imageurl" alt="{{recipe.name}}" style="max-height: 50px">
+        </span> 
+    </a>
+</div>
+
+
+<app-recipe-item></app-recipe-item>
